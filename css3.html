@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div{
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+      animation-name: spin;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+
+    }
+    @keyframes spin{
+      0%{
+
+      }
+      50%{
+        scale:2;
+      }
+      100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Codingal
+  </div>
+</body>
+</html>
