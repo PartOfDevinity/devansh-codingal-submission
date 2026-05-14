@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+.container{
+      position: relative;  
+      height: 600px;
+      padding:20px ;
+      border: 2px solid #a1b639;
+      margin-bottom: 100px;
+      
+}
+.static{
+    position: static;
+    background-color: #91d71f;
+    padding: 10px;
+    border: 1px solid #c56f6f;
+    
+}
+.relative{
+    position: relative;
+    background-color: #cceeff;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #d3a8a8;
+}
+.absolute{
+     position:absolute;
+     background-color: #ffcccb;
+     padding: 10px;
+     top: 50px;
+     left: 50px;
+     border: 1px solid #000;     
+}
+.fixed{
+    position: fixed;
+    background-color: #d3ffd3;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #000;    
+
+}
+.sticky-container{
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #000;
+    padding: 10px;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: #42e452;
+    padding: 10px;
+    border: 1px solid #000;
+
+}
+.content{
+    height: 600px;
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Example</h1>
+    <div class="container">
+        <div class="static">Static Position</div>
+        <div class="relative">Relative Position</div>
+        <div class="absolute">Absolute Position</div>
+    </div>
+
+    <div class="fixed">Fixed Position</div>
+
+    <div class="sticky-container">
+        <div class="sticky">Sticky Position</div>
+        <div class="content">
+            <p>Scroll to see the sticky element in action.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Mauris ultrices suscipit enim, at auctor sapien venenatis et.</p>
+            <p>Suspendisse potenti. Etiam malesuada turpis eu suscipit facilisis. Integer semper turpis vitae velit efficitur, ut tincidunt magna iaculis. Duis nec augue ut metus pulvinar volutpat.</p>
+            <p>Nunc sed libero at quam lacinia congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer lacinia dapibus dolor nec posuere.</p>
+        </div>
+    </div>
+
+</body>
+</html>
