@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: sans-serif; 
+     }
+     body {
+        background: #0d0d0d;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        height: 100vh;
+     }
+     form-container{
+      background:rdba(255,255,255,0.1);  
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0.015px rdba(0,255,255,0.3);
+      width: 320px;
+      text-align: center;
+     }
+     h2 {
+       color: #fff;
+       margin-bottom: 20px;
+     }
+     .input-box{
+        position: relative;
+        margin: 20px.0;
+
+     }
+     .input-box-input{
+        width: 100%;
+        padding: 12px 15px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 18px;
+        border-bottom: 2px solid rgba(255, 255, 255,0.5 );
+        transition: 0.4;
+     }
+     .input-box-input.focus{
+        border-color: #00ffff;
+        box-shadow: 0.5px 15px rgba( 0,255, 255, 255,0.3);
+     }
+     .input-box-span{
+        position:absolute;
+        top: 50%;
+        left: 50px;
+        color: rgba;
+     }
+
+       
+       
+    </style>
+</head>
+<body>
+    <div class="form-container">
+     <h2>login</h2>   
+    <div class="input-box">
+      <input type="text" placeholder="">
+      <span>username</span>
+    </div>
+      <div class="input-box">
+     <input type="password" placeholder="">
+     <span>password</span>
+      </div>
+      <button class="sumbit-btn">login</button>
+
+     </div>   
+</body>
+</html>
