@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>My Portfolio</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FONT */
+
+.dancing-script-main{
+  font-family: "Dancing Script", cursive;
+}
+
+/* NAVBAR */
+
+#nav{
+  background-color: #111827;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo{
+  width: 50px;
+  height: 50px;
+}
+
+#nav-1 h1{
+  color: #38bdf8;
+  margin: 0;
+}
+
+#nav-2{
+  display: flex;
+  gap: 25px;
+}
+
+#nav-2 a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+#nav-2 a:hover{
+  color: #38bdf8;
+}
+
+/* HOME PAGE */
+
+main{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.home-section{
+  min-height: 80vh;
+}
+
+#home-img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px black;
+  transition: 0.4s;
+}
+
+#home-img:hover{
+  transform: scale(1.03);
+}
+
+.home-info h4{
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.home-info h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.home-info p{
+  color: #d1d5db;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+.main-btn{
+  background-color: #38bdf8;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.main-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+/* PROJECT PAGE */
+
+.project-page{
+  padding: 80px 0;
+}
+
+.project-heading h1{
+  color: #38bdf8;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.project-heading p{
+  color: #d1d5db;
+}
+
+/* CARDS */
+
+.project-card{
+  background-color: #1e293b;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.project-card:hover{
+  transform: translateY(-10px);
+}
+
+.project-card img{
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body{
+  color: white;
+}
+
+.card-title{
+  color: #38bdf8;
+}
+
+/* SOCIAL SECTION */
+
+#social-section{
+  padding: 80px 0;
+}
+
+.social-card{
+  background-color: #1e293b;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.4s;
+}
+
+.social-card:hover{
+  transform: translateY(-10px);
+  background-color: #273449;
+}
+
+.social-card i{
+  font-size: 45px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.social-card h3{
+  margin: 0;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #111827;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 992px){
+
+  #nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #nav-2{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-info{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .home-info h2{
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 576px){
+
+  #nav-1 h1{
+    font-size: 24px;
+  }
+
+  #nav-2{
+    gap: 15px;
+  }
+
+  .home-info h2{
+    font-size: 32px;
+  }
+
+  .project-heading h1{
+    font-size: 35px;
+  }
+}
+</style>
+
+<!-- Bootstrap -->
+
+<link
+
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+
+rel="stylesheet"
+
+/>
+
+<!-- Font Awesome -->
+
+<link
+
+rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+ <header>
+  <div id="nav">
+    <div id="nav-1">
+       id="logo" 
+      <img src="" alt="">
+      <h1 class="dancing-script-main">My Portfolio</h1>
+  </div>
+
+  <div id="nav-2">
+    <a href="index.html">Home</a>
+    <a href="projects.html">projects</a>
+    <a href="social.html">Contacts</a>
+  </div>
+</div>
+ </header>
+    <section id="social-section">
+        <div class="container">
+
+            <div class="text-center project-heading">
+               <h1>connect with me</h1>
+               <p>follow me on social media platforms.</p> 
+            </div>
+
+                <div class="row g-4 mt-4">
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-linkedin"></i>
+                            <h3>linkedin</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-github"></i>
+                            <h3>Github</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-instagram"></i>
+                            <h3>Instagram</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-linkedin"></i>
+                            <h3>Youtube</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-envelope"></i>
+                            <h3>Email</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="social-cards">
+                            
+                            <i class="fab fa-snapchat"></i>
+                            <h3>Snapchat</h3>
+                        </a>
+                    </div>  
+            </div>
+
+        </div>
+    </section>
+ <footer>Copyright &copy; Created by Student at codingal ❤️🚀</footer>  
+</body>
+</html>
